@@ -1,11 +1,9 @@
 #  Code written by Jerin Rajan on 15th April 2020
 #  app.py - this file contains code that handles the
 # entry & exit point to our application (View)
-# import Flask
-from flask import Flask, request, jsonify
-import models
+
+from flask import Flask
 from service import ToDoService
-import json
 
 # create an app instance
 app = Flask(__name__)
@@ -18,8 +16,8 @@ def total():
     b = ToDoService()
     # Extracting the respose from List_total service
     response = b.list_total()
+    # return the reponse in the requested format
     return {"total": response}
-
 
 # on running python app.py
 if __name__ == '__main__':
