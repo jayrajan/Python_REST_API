@@ -2,6 +2,9 @@
 #  app.py - this file contains code that handles the
 # entry & exit point to our application (View)
 
+# IMPORTANT - Refer README.md file before running the script. It contains
+# instructions on how to run the script
+
 from flask import Flask
 from service import ToDoService
 

@@ -35,5 +35,10 @@ Run the Unit Test by typing in the command: python3 -m unittest utest_models.py
 Run the Unit Test by typing in the command: python3 -m unittest utest_service.py
 Run the Unit Test by typing in the command: python3 -m unittest utest_app.py
 
+## SOFTWARE ENGINEERING DOCUMENTATION:
+Please refer to file Software_Design_Process to study the software lifecycle
+process that was followed to engineer the 'total' endpoint
+using the MVC framework
+
 ## Author
 * Jerin Philips Rajan
