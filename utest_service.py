@@ -4,18 +4,24 @@
 # python3 -m unittest utest_service.py
 
 from service import ToDoService
+from models import calculation
 import unittest
 
 # Initialisation
 inst = ToDoService()
+inst1 = ToDoService().__init__()
+a = ToDoService().list_total()
 
 class test_models(unittest.TestCase):
+            # TestCase01 - Testing if correct instance of the class is called
+    def test_instance_of_Todoservice(self):
+        self.assertIsInstance(inst, ToDoService,
+                            'Error: incorrect instance of class ToDoService')
+            # TestCase02 - Testing for response from function list_total()
+    def test_instance_of_list_total(self):
+        self.assertEqual(a,'50000005000000',
+                        'Error: incorrect response from list_total() function ')
 
-    def test_instance_ToDoService(self):
-        # TestCase01 - Testing if correct instance of the class is called
-            def test_instance_of_calculation(self):
-                self.assertIsInstance(inst, ToDoService,
-                                     'Error: incorrect instance of class')
 
 if __name__ == 'main':
     unittest.main()
