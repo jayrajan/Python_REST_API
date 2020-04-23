@@ -14,20 +14,33 @@ class test_models(unittest.TestCase):
 # TestCase01 - Testing if correct instance of the class is called
     def test_instance_of_calculation(self):
         self.assertIsInstance(item, calculation,
-                             'incorrect instance of class')
+                             'Error: incorrect instance of class')
 # TestCase02 - Testing if the dimension of the list is assigned
     def test_size_dimension(self):
         size_dimension = 10000001
         self.assertEqual(item.size,size_dimension,
-                        'incorrect size dimension detected')
+                        'Error: incorrect size dimension detected')
 
-# TestCase03 - Testing the total calculation method response
+# TestCase03 - Testing the sum calculation capability
     def test_total_response(self):
-        c = item.total()
-        self.assertEqual(c,'50000005000000','error')
 
-# TestCase04 - Testing the sum calculation capability
+        # Test input list [0,1,2,3]
+        item.numbers_to_add = list(range(4))
+        # Calling an instance of total function
+        d = item.total()
+        # Expected sum of elements in list = '6'
+        self.assertEqual(d,'6',
+                        'Error: incorrect response from total() function ')
 
+# TestCase04 - Testing the sum calculation in returning a string
+#               for a test input list
+    def test_total_string(self):
+        # Test input list [0,1,2,3,4]
+        item.numbers_to_add = list(range(5))
+        e = item.total()
+        # Expected results is a string of '10'
+        self.assertNotEqual(e,10,
+                          'Error: function giving a non-string response')
 
 if __name__ == 'main':
     unittest.main()
