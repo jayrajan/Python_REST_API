@@ -3,6 +3,9 @@
 # Use below command to run unittest
 # python3 -m unittest utest_models.py
 
+# IMPORTANT - Refer README.md file before running the script. It contains
+# instructions on how to run the script
+
 from models import calculation
 import unittest
 

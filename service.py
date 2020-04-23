@@ -1,6 +1,9 @@
 #  Code written by Jerin Rajan on 15th April 2020
 # service.py - converts the request into a response (Controller)
 
+# IMPORTANT - Refer README.md file before running the script. It contains
+# instructions on how to run the script
+
 from models import calculation
 
 # defines all the supported services for user requests

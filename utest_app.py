@@ -3,6 +3,10 @@
 # Use below command to run unittest
 # python3 -m unittest utest_app.py
 
+# IMPORTANT - Refer README.md file before running the script. It contains
+# instructions on how to run the script
+
+
 from app import total
 from service import ToDoService
 import unittest

@@ -1,6 +1,9 @@
 # Code written by Jerin Rajan on 15th April 2020
 # models.py - handles data and business logic (Model)
 
+# IMPORTANT - Refer README.md file before running the script. It contains
+# instructions on how to run the script
+
 class calculation:
     # Int which specifies the range size
     size = 10000001
