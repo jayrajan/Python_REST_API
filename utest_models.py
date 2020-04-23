@@ -1,7 +1,7 @@
 #  Code written by Jerin Rajan on 22nd April 2020
 # Unit Testing
 # Use below command to run unittest
-# python -m unittest utest_models.py
+# python3 -m unittest utest_models.py
 
 from models import calculation
 import unittest
