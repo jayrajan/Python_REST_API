@@ -25,4 +25,4 @@ def total():
 # on running python app.py
 if __name__ == '__main__':
     # run the flask app
-    app.run(debug=True)
+    app.run()
